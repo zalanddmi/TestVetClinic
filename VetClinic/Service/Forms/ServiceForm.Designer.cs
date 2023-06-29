@@ -1,4 +1,4 @@
-﻿namespace VetClinic.Service.Forms
+﻿namespace VetClinic.service.Forms
 {
     partial class ServiceForm
     {

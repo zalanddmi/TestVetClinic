@@ -1,4 +1,4 @@
-﻿namespace VetClinic.Owner.Forms
+﻿namespace VetClinic.owner.Forms
 {
     partial class OwnerForm
     {

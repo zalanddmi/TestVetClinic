@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Interfaces
+namespace VetClinic.interfaces
 {
     internal class IRepository
     {

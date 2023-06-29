@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Vaccination.Controllers
+namespace VetClinic.vaccination.Controllers
 {
     internal class VaccinationController
     {

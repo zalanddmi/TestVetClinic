@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Service.Repositories
+namespace VetClinic.service.Repositories
 {
     internal class ServiceRepository
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Doctor.Repositories
+namespace VetClinic.doctor.Repositories
 {
     internal class DoctorRepository
     {

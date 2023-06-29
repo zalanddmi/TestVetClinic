@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Service.Controllers
+namespace VetClinic.service.Controllers
 {
     internal class ServiceController
     {

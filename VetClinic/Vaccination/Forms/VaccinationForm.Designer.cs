@@ -1,4 +1,4 @@
-﻿namespace VetClinic.Vaccination.Forms
+﻿namespace VetClinic.vaccination.Forms
 {
     partial class VaccinationForm
     {

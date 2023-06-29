@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Animal.Controllers
+
+namespace VetClinic.animal.Controllers
 {
     internal class AnimalController
     {

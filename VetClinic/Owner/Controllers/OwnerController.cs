@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Owner.Controllers
+namespace VetClinic.owner.Controllers
 {
     internal class OwnerController
     {

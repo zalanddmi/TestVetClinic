@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VetClinic.Vaccination.Forms
+namespace VetClinic.vaccination.Forms
 {
     public partial class VaccinationForm : Form
     {

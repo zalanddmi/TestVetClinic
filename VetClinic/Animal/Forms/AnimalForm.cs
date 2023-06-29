@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VetClinic.Animal.Forms
+namespace VetClinic.animal.Forms
 {
     public partial class AnimalForm : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace VetClinic.Animal.Forms
+﻿namespace VetClinic.animal.Forms
 {
     partial class AnimalForm
     {

@@ -45,6 +45,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,14 +58,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="animal\Controllers\AnimalController.cs" />
+    <Compile Include="animal\Forms\AnimalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="animal\Forms\AnimalForm.Designer.cs">
+      <DependentUpon>AnimalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="animal\Models\Animal.cs" />
+    <Compile Include="animal\Repositories\AnimalRepository.cs" />
+    <Compile Include="animal\Services\AnimalService.cs" />
+    <Compile Include="data\VetClinicContext.cs" />
+    <Compile Include="doctor\Controllers\DoctorController.cs" />
+    <Compile Include="doctor\Forms\DoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor\Forms\DoctorForm.Designer.cs">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor\Models\Doctor.cs" />
+    <Compile Include="doctor\Repositories\DoctorRepository.cs" />
+    <Compile Include="doctor\Services\DoctorService.cs" />
+    <Compile Include="interfaces\IController.cs" />
+    <Compile Include="interfaces\IRepository.cs" />
+    <Compile Include="interfaces\IService.cs" />
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="owner\Controllers\OwnerController.cs" />
+    <Compile Include="owner\Forms\OwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="owner\Forms\OwnerForm.Designer.cs">
+      <DependentUpon>OwnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="owner\Models\Owner.cs" />
+    <Compile Include="owner\Repositories\OwnerRepository.cs" />
+    <Compile Include="owner\Services\OwnerService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="service\Controllers\ServiceController.cs" />
+    <Compile Include="service\Forms\ServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="service\Forms\ServiceForm.Designer.cs">
+      <DependentUpon>ServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="service\Models\Service.cs" />
+    <Compile Include="service\Repositories\ServiceRepository.cs" />
+    <Compile Include="service\Services\ServiceService.cs" />
+    <Compile Include="vaccination\Controllers\VaccinationController.cs" />
+    <Compile Include="vaccination\Forms\VaccinationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vaccination\Forms\VaccinationForm.Designer.cs">
+      <DependentUpon>VaccinationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vaccination\Models\Vaccination.cs" />
+    <Compile Include="vaccination\Repositories\VaccinationRepository.cs" />
+    <Compile Include="vaccination\Services\VaccinationService.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -87,6 +144,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Vaccination.Repositories
+namespace VetClinic.vaccination.Repositories
 {
     internal class VaccinationRepository
     {

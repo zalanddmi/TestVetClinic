@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VetClinic.Owner.Repositories
+namespace VetClinic.owner.Repositories
 {
     internal class OwnerRepository
     {

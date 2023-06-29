@@ -1,6 +1,6 @@
 ﻿namespace VetClinic
 {
-    partial class Form1
+    partial class MenuForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.

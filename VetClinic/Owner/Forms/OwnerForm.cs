@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VetClinic
+namespace VetClinic.Owner.Forms
 {
-    public partial class Form1 : Form
+    public partial class OwnerForm : Form
     {
-        public Form1()
+        public OwnerForm()
         {
             InitializeComponent();
         }

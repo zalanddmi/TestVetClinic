@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace VetClinic.interfaces
 {
-    internal class IService
+    public interface IService
     {
+        List<object[]> GetAll();
+        object[] GetById(int id);
+        void Add(object[] values);
+        void Update(int id, object[] values);
+        void Delete(int id);
     }
 }

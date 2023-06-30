@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace VetClinic.interfaces
 {
-    internal class IController
+    public interface IController<T> where T : class
     {
+        List<object[]> GetAllRecords();
+        object[] GetRecord(int id);
+        void AddRecord(object[] values);
+        void UpdateRecord(int id, object[] values);
+        void DeleteRecord(int id);
     }
 }

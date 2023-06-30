@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using VetClinic.animal.Models;
 using VetClinic.doctor.Models;
+using VetClinic.service.Models;
 
 namespace VetClinic.vaccination.Models
 {

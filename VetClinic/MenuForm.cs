@@ -13,17 +13,15 @@ namespace VetClinic
 {
     public partial class MenuForm : Form
     {
-        private readonly AnimalForm _animalForm;
-
         public MenuForm()
         {
             InitializeComponent();
-            _animalForm = new AnimalForm();
         }
 
         private void buttonAnimals_Click(object sender, EventArgs e)
         {
-            _animalForm.Show();
+            AnimalForm animalForm = new AnimalForm();
+            animalForm.ShowDialog();
         }
     }
 }

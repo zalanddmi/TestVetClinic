@@ -21,11 +21,11 @@ namespace VetClinic.animal.Services
 
         public void Add(object[] values)
         {
-            string name = (string)values[1];
-            DateTime birthDate = (DateTime)values[2];
-            string typeAnimal = (string)values[3];
-            bool sex = (bool)values[4];
-            int owner_id = (int)values[5];
+            string name = (string)values[0];
+            DateTime birthDate = (DateTime)values[1];
+            string typeAnimal = (string)values[2];
+            bool sex = (int)values[3] == 1;
+            int owner_id = (int)values[4];
             Check(name, birthDate, typeAnimal);
             Animal animal = new Animal
             {
@@ -74,21 +74,21 @@ namespace VetClinic.animal.Services
             var result = new object[]
             {
                 animal.name,
-                animal.birthDate.Value.ToShortDateString(),
+                animal.birthDate.Value,
                 animal.typeAnimal,
                 animal.sex,
-                animal.Owner.fio
+                animal.Owner.id_owner
             };
             return result;
         }
 
         public void Update(int id, object[] values)
         {
-            string name = (string)values[1];
-            DateTime birthDate = (DateTime)values[2];
-            string typeAnimal = (string)values[3];
-            bool sex = (bool)values[4];
-            int owner_id = (int)values[5];
+            string name = (string)values[0];
+            DateTime birthDate = (DateTime)values[1];
+            string typeAnimal = (string)values[2];
+            bool sex = (int)values[3] == 1;
+            int owner_id = (int)values[4];
             Check(name, birthDate, typeAnimal);
             Animal animal = new Animal
             {
@@ -109,7 +109,7 @@ namespace VetClinic.animal.Services
             }
             if (birthDate > DateTime.Today)
             {
-                throw new ArgumentException("Дата рождения не может быть позже нынешней.");
+                throw new ArgumentException("Дата рождения не может быть позже текущей.");
             }
             if (string.IsNullOrWhiteSpace(typeAnimal))
             {

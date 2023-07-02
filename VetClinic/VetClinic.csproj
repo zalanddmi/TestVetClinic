@@ -80,6 +80,7 @@
     <Compile Include="doctor\Repositories\DoctorRepository.cs" />
     <Compile Include="doctor\Services\DoctorService.cs" />
     <Compile Include="interfaces\IController.cs" />
+    <Compile Include="interfaces\IForm.cs" />
     <Compile Include="interfaces\IRepository.cs" />
     <Compile Include="interfaces\IService.cs" />
     <Compile Include="MenuForm.cs">

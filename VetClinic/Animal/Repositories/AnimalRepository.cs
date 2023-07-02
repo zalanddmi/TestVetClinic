@@ -21,6 +21,7 @@ namespace VetClinic.animal.Repositories
         public void Add(Animal animal)
         {
             _context.Animal.Add(animal);
+            _context.SaveChanges();
         }
 
         public void Delete(int id)
@@ -54,6 +55,7 @@ namespace VetClinic.animal.Repositories
                 exAnimal.sex = animal.sex;
                 exAnimal.owner_id = animal.owner_id;
             }
+            _context.SaveChanges();
         }
     }
 }

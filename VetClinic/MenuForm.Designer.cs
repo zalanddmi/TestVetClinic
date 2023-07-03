@@ -30,6 +30,7 @@
         {
             this.buttonAnimals = new System.Windows.Forms.Button();
             this.buttonDoctors = new System.Windows.Forms.Button();
+            this.buttonOwners = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAnimals
@@ -52,11 +53,22 @@
             this.buttonDoctors.UseVisualStyleBackColor = true;
             this.buttonDoctors.Click += new System.EventHandler(this.buttonDoctors_Click);
             // 
+            // buttonOwners
+            // 
+            this.buttonOwners.Location = new System.Drawing.Point(349, 176);
+            this.buttonOwners.Name = "buttonOwners";
+            this.buttonOwners.Size = new System.Drawing.Size(75, 23);
+            this.buttonOwners.TabIndex = 2;
+            this.buttonOwners.Text = "Хозяева";
+            this.buttonOwners.UseVisualStyleBackColor = true;
+            this.buttonOwners.Click += new System.EventHandler(this.buttonOwners_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonOwners);
             this.Controls.Add(this.buttonDoctors);
             this.Controls.Add(this.buttonAnimals);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -71,6 +83,7 @@
 
         private System.Windows.Forms.Button buttonAnimals;
         private System.Windows.Forms.Button buttonDoctors;
+        private System.Windows.Forms.Button buttonOwners;
     }
 }
 

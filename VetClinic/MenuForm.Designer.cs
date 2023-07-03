@@ -31,6 +31,7 @@
             this.buttonAnimals = new System.Windows.Forms.Button();
             this.buttonDoctors = new System.Windows.Forms.Button();
             this.buttonOwners = new System.Windows.Forms.Button();
+            this.buttonServices = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAnimals
@@ -63,11 +64,22 @@
             this.buttonOwners.UseVisualStyleBackColor = true;
             this.buttonOwners.Click += new System.EventHandler(this.buttonOwners_Click);
             // 
+            // buttonServices
+            // 
+            this.buttonServices.Location = new System.Drawing.Point(349, 205);
+            this.buttonServices.Name = "buttonServices";
+            this.buttonServices.Size = new System.Drawing.Size(75, 23);
+            this.buttonServices.TabIndex = 3;
+            this.buttonServices.Text = "Услуги";
+            this.buttonServices.UseVisualStyleBackColor = true;
+            this.buttonServices.Click += new System.EventHandler(this.buttonServices_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonServices);
             this.Controls.Add(this.buttonOwners);
             this.Controls.Add(this.buttonDoctors);
             this.Controls.Add(this.buttonAnimals);
@@ -84,6 +96,7 @@
         private System.Windows.Forms.Button buttonAnimals;
         private System.Windows.Forms.Button buttonDoctors;
         private System.Windows.Forms.Button buttonOwners;
+        private System.Windows.Forms.Button buttonServices;
     }
 }
 

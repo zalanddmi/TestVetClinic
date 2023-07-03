@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using VetClinic.animal.Forms;
 using VetClinic.doctor.Forms;
 using VetClinic.owner.Forms;
+using VetClinic.service.Forms;
 
 namespace VetClinic
 {
@@ -36,6 +37,12 @@ namespace VetClinic
         {
             OwnerForm ownerForm = new OwnerForm();
             ownerForm.ShowDialog();
+        }
+
+        private void buttonServices_Click(object sender, EventArgs e)
+        {
+            ServiceForm serviceForm = new ServiceForm();
+            serviceForm.ShowDialog();
         }
     }
 }

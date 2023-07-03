@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.buttonAnimals = new System.Windows.Forms.Button();
+            this.buttonDoctors = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAnimals
@@ -41,11 +42,22 @@
             this.buttonAnimals.UseVisualStyleBackColor = true;
             this.buttonAnimals.Click += new System.EventHandler(this.buttonAnimals_Click);
             // 
+            // buttonDoctors
+            // 
+            this.buttonDoctors.Location = new System.Drawing.Point(349, 147);
+            this.buttonDoctors.Name = "buttonDoctors";
+            this.buttonDoctors.Size = new System.Drawing.Size(75, 23);
+            this.buttonDoctors.TabIndex = 1;
+            this.buttonDoctors.Text = "Врачи";
+            this.buttonDoctors.UseVisualStyleBackColor = true;
+            this.buttonDoctors.Click += new System.EventHandler(this.buttonDoctors_Click);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonDoctors);
             this.Controls.Add(this.buttonAnimals);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MenuForm";
@@ -58,6 +70,7 @@
         #endregion
 
         private System.Windows.Forms.Button buttonAnimals;
+        private System.Windows.Forms.Button buttonDoctors;
     }
 }
 

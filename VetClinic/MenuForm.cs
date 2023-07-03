@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VetClinic.animal.Forms;
+using VetClinic.doctor.Forms;
 
 namespace VetClinic
 {
@@ -22,6 +23,12 @@ namespace VetClinic
         {
             AnimalForm animalForm = new AnimalForm();
             animalForm.ShowDialog();
+        }
+
+        private void buttonDoctors_Click(object sender, EventArgs e)
+        {
+            DoctorForm doctorForm = new DoctorForm();
+            doctorForm.ShowDialog();
         }
     }
 }

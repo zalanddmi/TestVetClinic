@@ -40,18 +40,18 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.groupBoxAnimal = new System.Windows.Forms.GroupBox();
-            this.labelName = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.labelBirthDate = new System.Windows.Forms.Label();
-            this.dateTimePickerBirthDate = new System.Windows.Forms.DateTimePicker();
-            this.textBoxTypeAnimal = new System.Windows.Forms.TextBox();
-            this.labelTypeAnimal = new System.Windows.Forms.Label();
-            this.labelSex = new System.Windows.Forms.Label();
-            this.comboBoxSex = new System.Windows.Forms.ComboBox();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonOk = new System.Windows.Forms.Button();
             this.comboBoxOwner = new System.Windows.Forms.ComboBox();
             this.labelOwner = new System.Windows.Forms.Label();
-            this.buttonOk = new System.Windows.Forms.Button();
-            this.buttonCancel = new System.Windows.Forms.Button();
+            this.comboBoxSex = new System.Windows.Forms.ComboBox();
+            this.labelSex = new System.Windows.Forms.Label();
+            this.textBoxTypeAnimal = new System.Windows.Forms.TextBox();
+            this.labelTypeAnimal = new System.Windows.Forms.Label();
+            this.dateTimePickerBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.labelBirthDate = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnimals)).BeginInit();
             this.groupBoxAnimal.SuspendLayout();
             this.SuspendLayout();
@@ -168,73 +168,25 @@
             this.groupBoxAnimal.TabStop = false;
             this.groupBoxAnimal.Text = "Животное";
             // 
-            // labelName
+            // buttonCancel
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(7, 20);
-            this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(46, 13);
-            this.labelName.TabIndex = 0;
-            this.labelName.Text = "Кличка:";
+            this.buttonCancel.Location = new System.Drawing.Point(119, 182);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancel.TabIndex = 10;
+            this.buttonCancel.Text = "Отмена";
+            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // textBoxName
+            // buttonOk
             // 
-            this.textBoxName.Location = new System.Drawing.Point(10, 37);
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(184, 20);
-            this.textBoxName.TabIndex = 1;
-            // 
-            // labelBirthDate
-            // 
-            this.labelBirthDate.AutoSize = true;
-            this.labelBirthDate.Location = new System.Drawing.Point(7, 60);
-            this.labelBirthDate.Name = "labelBirthDate";
-            this.labelBirthDate.Size = new System.Drawing.Size(89, 13);
-            this.labelBirthDate.TabIndex = 2;
-            this.labelBirthDate.Text = "Дата рождения:";
-            // 
-            // dateTimePickerBirthDate
-            // 
-            this.dateTimePickerBirthDate.Location = new System.Drawing.Point(10, 77);
-            this.dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
-            this.dateTimePickerBirthDate.Size = new System.Drawing.Size(184, 20);
-            this.dateTimePickerBirthDate.TabIndex = 3;
-            // 
-            // textBoxTypeAnimal
-            // 
-            this.textBoxTypeAnimal.Location = new System.Drawing.Point(10, 117);
-            this.textBoxTypeAnimal.Name = "textBoxTypeAnimal";
-            this.textBoxTypeAnimal.Size = new System.Drawing.Size(123, 20);
-            this.textBoxTypeAnimal.TabIndex = 5;
-            // 
-            // labelTypeAnimal
-            // 
-            this.labelTypeAnimal.AutoSize = true;
-            this.labelTypeAnimal.Location = new System.Drawing.Point(7, 100);
-            this.labelTypeAnimal.Name = "labelTypeAnimal";
-            this.labelTypeAnimal.Size = new System.Drawing.Size(29, 13);
-            this.labelTypeAnimal.TabIndex = 4;
-            this.labelTypeAnimal.Text = "Вид:";
-            // 
-            // labelSex
-            // 
-            this.labelSex.AutoSize = true;
-            this.labelSex.Location = new System.Drawing.Point(138, 100);
-            this.labelSex.Name = "labelSex";
-            this.labelSex.Size = new System.Drawing.Size(30, 13);
-            this.labelSex.TabIndex = 6;
-            this.labelSex.Text = "Пол:";
-            // 
-            // comboBoxSex
-            // 
-            this.comboBoxSex.FormattingEnabled = true;
-            this.comboBoxSex.Items.AddRange(new object[] {
-            "Ж",
-            "М"});
-            this.comboBoxSex.Location = new System.Drawing.Point(140, 115);
-            this.comboBoxSex.Name = "comboBoxSex";
-            this.comboBoxSex.Size = new System.Drawing.Size(54, 21);
-            this.comboBoxSex.TabIndex = 7;
+            this.buttonOk.Location = new System.Drawing.Point(38, 182);
+            this.buttonOk.Name = "buttonOk";
+            this.buttonOk.Size = new System.Drawing.Size(75, 23);
+            this.buttonOk.TabIndex = 5;
+            this.buttonOk.Text = "ОК";
+            this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // comboBoxOwner
             // 
@@ -253,31 +205,79 @@
             this.labelOwner.TabIndex = 8;
             this.labelOwner.Text = "Хозяин:";
             // 
-            // buttonOk
+            // comboBoxSex
             // 
-            this.buttonOk.Location = new System.Drawing.Point(38, 182);
-            this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(75, 23);
-            this.buttonOk.TabIndex = 5;
-            this.buttonOk.Text = "ОК";
-            this.buttonOk.UseVisualStyleBackColor = true;
-            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
+            this.comboBoxSex.FormattingEnabled = true;
+            this.comboBoxSex.Items.AddRange(new object[] {
+            "Ж",
+            "М"});
+            this.comboBoxSex.Location = new System.Drawing.Point(140, 115);
+            this.comboBoxSex.Name = "comboBoxSex";
+            this.comboBoxSex.Size = new System.Drawing.Size(54, 21);
+            this.comboBoxSex.TabIndex = 7;
             // 
-            // buttonCancel
+            // labelSex
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(119, 182);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancel.TabIndex = 10;
-            this.buttonCancel.Text = "Отмена";
-            this.buttonCancel.UseVisualStyleBackColor = true;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            this.labelSex.AutoSize = true;
+            this.labelSex.Location = new System.Drawing.Point(138, 100);
+            this.labelSex.Name = "labelSex";
+            this.labelSex.Size = new System.Drawing.Size(30, 13);
+            this.labelSex.TabIndex = 6;
+            this.labelSex.Text = "Пол:";
+            // 
+            // textBoxTypeAnimal
+            // 
+            this.textBoxTypeAnimal.Location = new System.Drawing.Point(10, 117);
+            this.textBoxTypeAnimal.Name = "textBoxTypeAnimal";
+            this.textBoxTypeAnimal.Size = new System.Drawing.Size(123, 20);
+            this.textBoxTypeAnimal.TabIndex = 5;
+            // 
+            // labelTypeAnimal
+            // 
+            this.labelTypeAnimal.AutoSize = true;
+            this.labelTypeAnimal.Location = new System.Drawing.Point(7, 100);
+            this.labelTypeAnimal.Name = "labelTypeAnimal";
+            this.labelTypeAnimal.Size = new System.Drawing.Size(29, 13);
+            this.labelTypeAnimal.TabIndex = 4;
+            this.labelTypeAnimal.Text = "Вид:";
+            // 
+            // dateTimePickerBirthDate
+            // 
+            this.dateTimePickerBirthDate.Location = new System.Drawing.Point(10, 77);
+            this.dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
+            this.dateTimePickerBirthDate.Size = new System.Drawing.Size(184, 20);
+            this.dateTimePickerBirthDate.TabIndex = 3;
+            // 
+            // labelBirthDate
+            // 
+            this.labelBirthDate.AutoSize = true;
+            this.labelBirthDate.Location = new System.Drawing.Point(7, 60);
+            this.labelBirthDate.Name = "labelBirthDate";
+            this.labelBirthDate.Size = new System.Drawing.Size(89, 13);
+            this.labelBirthDate.TabIndex = 2;
+            this.labelBirthDate.Text = "Дата рождения:";
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(10, 37);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(184, 20);
+            this.textBoxName.TabIndex = 1;
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(7, 20);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(46, 13);
+            this.labelName.TabIndex = 0;
+            this.labelName.Text = "Кличка:";
             // 
             // AnimalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 241);
+            this.ClientSize = new System.Drawing.Size(931, 482);
             this.Controls.Add(this.groupBoxAnimal);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);

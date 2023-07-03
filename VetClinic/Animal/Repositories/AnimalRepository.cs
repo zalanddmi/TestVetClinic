@@ -26,7 +26,7 @@ namespace VetClinic.animal.Repositories
 
         public void Delete(int id)
         {
-            var animal = _context.Animal.FirstOrDefault(a => a.id_animal == id);
+            var animal = GetById(id);
             if (animal != null)
             {
                 _context.Animal.Remove(animal);
@@ -46,7 +46,7 @@ namespace VetClinic.animal.Repositories
 
         public void Update(int id, Animal animal)
         {
-            var exAnimal = _context.Animal.FirstOrDefault(a => a.id_animal == id);
+            var exAnimal = GetById(id);
             if (exAnimal != null)
             {
                 exAnimal.name = animal.name;

@@ -16,7 +16,7 @@ namespace VetClinic.animal.Forms
 {
     public partial class AnimalForm : Form, IForm
     {
-        private readonly IController<Animal> _animalController;
+        private readonly IController _animalController;
         private bool isAdd;
 
         public AnimalForm()

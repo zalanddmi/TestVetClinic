@@ -10,9 +10,10 @@ using VetClinic.interfaces;
 
 namespace VetClinic.animal.Controllers
 {
-    public class AnimalController : IController<Animal>
+    public class AnimalController : IController
     {
         private readonly IService _animalService;
+
         public AnimalController() 
         {
             _animalService = new AnimalService();

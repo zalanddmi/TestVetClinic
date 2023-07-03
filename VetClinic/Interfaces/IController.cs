@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VetClinic.interfaces
 {
-    public interface IController<T> where T : class
+    public interface IController
     {
         List<object[]> GetAllRecords();
         object[] GetRecord(int id);

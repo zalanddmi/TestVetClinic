@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using VetClinic.animal.Controllers;
-using VetClinic.animal.Models;
-using VetClinic.data;
 using VetClinic.interfaces;
 using VetClinic.owner.Models;
 using VetClinic.owner.Repositories;

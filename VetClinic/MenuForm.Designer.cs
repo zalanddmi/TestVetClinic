@@ -37,7 +37,7 @@
             // 
             // buttonAnimals
             // 
-            this.buttonAnimals.Location = new System.Drawing.Point(349, 118);
+            this.buttonAnimals.Location = new System.Drawing.Point(187, 57);
             this.buttonAnimals.Name = "buttonAnimals";
             this.buttonAnimals.Size = new System.Drawing.Size(75, 23);
             this.buttonAnimals.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // buttonDoctors
             // 
-            this.buttonDoctors.Location = new System.Drawing.Point(349, 147);
+            this.buttonDoctors.Location = new System.Drawing.Point(187, 86);
             this.buttonDoctors.Name = "buttonDoctors";
             this.buttonDoctors.Size = new System.Drawing.Size(75, 23);
             this.buttonDoctors.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // buttonOwners
             // 
-            this.buttonOwners.Location = new System.Drawing.Point(349, 176);
+            this.buttonOwners.Location = new System.Drawing.Point(187, 115);
             this.buttonOwners.Name = "buttonOwners";
             this.buttonOwners.Size = new System.Drawing.Size(75, 23);
             this.buttonOwners.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // buttonServices
             // 
-            this.buttonServices.Location = new System.Drawing.Point(349, 205);
+            this.buttonServices.Location = new System.Drawing.Point(187, 144);
             this.buttonServices.Name = "buttonServices";
             this.buttonServices.Size = new System.Drawing.Size(75, 23);
             this.buttonServices.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // buttonVaccinations
             // 
-            this.buttonVaccinations.Location = new System.Drawing.Point(349, 234);
+            this.buttonVaccinations.Location = new System.Drawing.Point(187, 173);
             this.buttonVaccinations.Name = "buttonVaccinations";
             this.buttonVaccinations.Size = new System.Drawing.Size(75, 23);
             this.buttonVaccinations.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(446, 284);
             this.Controls.Add(this.buttonVaccinations);
             this.Controls.Add(this.buttonServices);
             this.Controls.Add(this.buttonOwners);
@@ -98,7 +98,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Меню";
             this.ResumeLayout(false);
 
         }

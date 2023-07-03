@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using VetClinic.animal.Models;
-using VetClinic.animal.Repositories;
 using VetClinic.interfaces;
 using VetClinic.vaccination.Models;
 using VetClinic.vaccination.Repositories;

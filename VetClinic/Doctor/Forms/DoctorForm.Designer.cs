@@ -123,7 +123,7 @@
             this.groupBoxDoctor.Controls.Add(this.labelSpecialization);
             this.groupBoxDoctor.Controls.Add(this.textBoxFio);
             this.groupBoxDoctor.Controls.Add(this.labelFio);
-            this.groupBoxDoctor.Location = new System.Drawing.Point(504, 116);
+            this.groupBoxDoctor.Location = new System.Drawing.Point(500, 12);
             this.groupBoxDoctor.Name = "groupBoxDoctor";
             this.groupBoxDoctor.Size = new System.Drawing.Size(200, 137);
             this.groupBoxDoctor.TabIndex = 7;
@@ -186,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 359);
+            this.ClientSize = new System.Drawing.Size(728, 236);
             this.Controls.Add(this.groupBoxDoctor);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);

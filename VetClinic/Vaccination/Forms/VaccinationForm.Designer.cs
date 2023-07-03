@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.dataGridViewVaccinations = new System.Windows.Forms.DataGridView();
-            this.groupBoxVaccination = new System.Windows.Forms.GroupBox();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonOk = new System.Windows.Forms.Button();
-            this.comboBoxAnimal = new System.Windows.Forms.ComboBox();
-            this.dateTimePickerDateVac = new System.Windows.Forms.DateTimePicker();
-            this.labelDateVac = new System.Windows.Forms.Label();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.labelAnimal = new System.Windows.Forms.Label();
-            this.comboBoxDoctor = new System.Windows.Forms.ComboBox();
-            this.labelDoctor = new System.Windows.Forms.Label();
-            this.comboBoxService = new System.Windows.Forms.ComboBox();
-            this.labelService = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateVac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.animal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.service = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBoxVaccination = new System.Windows.Forms.GroupBox();
+            this.comboBoxService = new System.Windows.Forms.ComboBox();
+            this.labelService = new System.Windows.Forms.Label();
+            this.comboBoxDoctor = new System.Windows.Forms.ComboBox();
+            this.labelDoctor = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonOk = new System.Windows.Forms.Button();
+            this.comboBoxAnimal = new System.Windows.Forms.ComboBox();
+            this.labelAnimal = new System.Windows.Forms.Label();
+            this.dateTimePickerDateVac = new System.Windows.Forms.DateTimePicker();
+            this.labelDateVac = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVaccinations)).BeginInit();
             this.groupBoxVaccination.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +73,37 @@
             this.dataGridViewVaccinations.Size = new System.Drawing.Size(665, 211);
             this.dataGridViewVaccinations.TabIndex = 1;
             // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // dateVac
+            // 
+            this.dateVac.HeaderText = "Дата прививки";
+            this.dateVac.Name = "dateVac";
+            this.dateVac.ReadOnly = true;
+            // 
+            // animal
+            // 
+            this.animal.HeaderText = "Животное";
+            this.animal.Name = "animal";
+            this.animal.ReadOnly = true;
+            // 
+            // doctor
+            // 
+            this.doctor.HeaderText = "Врач";
+            this.doctor.Name = "doctor";
+            this.doctor.ReadOnly = true;
+            // 
+            // service
+            // 
+            this.service.HeaderText = "Услуга";
+            this.service.Name = "service";
+            this.service.ReadOnly = true;
+            // 
             // groupBoxVaccination
             // 
             this.groupBoxVaccination.Controls.Add(this.comboBoxService);
@@ -85,12 +116,46 @@
             this.groupBoxVaccination.Controls.Add(this.labelAnimal);
             this.groupBoxVaccination.Controls.Add(this.dateTimePickerDateVac);
             this.groupBoxVaccination.Controls.Add(this.labelDateVac);
-            this.groupBoxVaccination.Location = new System.Drawing.Point(697, 116);
+            this.groupBoxVaccination.Location = new System.Drawing.Point(701, 12);
             this.groupBoxVaccination.Name = "groupBoxVaccination";
             this.groupBoxVaccination.Size = new System.Drawing.Size(200, 211);
             this.groupBoxVaccination.TabIndex = 8;
             this.groupBoxVaccination.TabStop = false;
             this.groupBoxVaccination.Text = "Прививка";
+            // 
+            // comboBoxService
+            // 
+            this.comboBoxService.FormattingEnabled = true;
+            this.comboBoxService.Location = new System.Drawing.Point(8, 149);
+            this.comboBoxService.Name = "comboBoxService";
+            this.comboBoxService.Size = new System.Drawing.Size(185, 21);
+            this.comboBoxService.TabIndex = 14;
+            // 
+            // labelService
+            // 
+            this.labelService.AutoSize = true;
+            this.labelService.Location = new System.Drawing.Point(6, 134);
+            this.labelService.Name = "labelService";
+            this.labelService.Size = new System.Drawing.Size(46, 13);
+            this.labelService.TabIndex = 13;
+            this.labelService.Text = "Услуга:";
+            // 
+            // comboBoxDoctor
+            // 
+            this.comboBoxDoctor.FormattingEnabled = true;
+            this.comboBoxDoctor.Location = new System.Drawing.Point(8, 110);
+            this.comboBoxDoctor.Name = "comboBoxDoctor";
+            this.comboBoxDoctor.Size = new System.Drawing.Size(185, 21);
+            this.comboBoxDoctor.TabIndex = 12;
+            // 
+            // labelDoctor
+            // 
+            this.labelDoctor.AutoSize = true;
+            this.labelDoctor.Location = new System.Drawing.Point(6, 95);
+            this.labelDoctor.Name = "labelDoctor";
+            this.labelDoctor.Size = new System.Drawing.Size(34, 13);
+            this.labelDoctor.TabIndex = 11;
+            this.labelDoctor.Text = "Врач:";
             // 
             // buttonCancel
             // 
@@ -119,6 +184,15 @@
             this.comboBoxAnimal.Name = "comboBoxAnimal";
             this.comboBoxAnimal.Size = new System.Drawing.Size(185, 21);
             this.comboBoxAnimal.TabIndex = 9;
+            // 
+            // labelAnimal
+            // 
+            this.labelAnimal.AutoSize = true;
+            this.labelAnimal.Location = new System.Drawing.Point(6, 56);
+            this.labelAnimal.Name = "labelAnimal";
+            this.labelAnimal.Size = new System.Drawing.Size(62, 13);
+            this.labelAnimal.TabIndex = 8;
+            this.labelAnimal.Text = "Животное:";
             // 
             // dateTimePickerDateVac
             // 
@@ -166,85 +240,11 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // labelAnimal
-            // 
-            this.labelAnimal.AutoSize = true;
-            this.labelAnimal.Location = new System.Drawing.Point(6, 56);
-            this.labelAnimal.Name = "labelAnimal";
-            this.labelAnimal.Size = new System.Drawing.Size(62, 13);
-            this.labelAnimal.TabIndex = 8;
-            this.labelAnimal.Text = "Животное:";
-            // 
-            // comboBoxDoctor
-            // 
-            this.comboBoxDoctor.FormattingEnabled = true;
-            this.comboBoxDoctor.Location = new System.Drawing.Point(8, 110);
-            this.comboBoxDoctor.Name = "comboBoxDoctor";
-            this.comboBoxDoctor.Size = new System.Drawing.Size(185, 21);
-            this.comboBoxDoctor.TabIndex = 12;
-            // 
-            // labelDoctor
-            // 
-            this.labelDoctor.AutoSize = true;
-            this.labelDoctor.Location = new System.Drawing.Point(6, 95);
-            this.labelDoctor.Name = "labelDoctor";
-            this.labelDoctor.Size = new System.Drawing.Size(34, 13);
-            this.labelDoctor.TabIndex = 11;
-            this.labelDoctor.Text = "Врач:";
-            // 
-            // comboBoxService
-            // 
-            this.comboBoxService.FormattingEnabled = true;
-            this.comboBoxService.Location = new System.Drawing.Point(8, 149);
-            this.comboBoxService.Name = "comboBoxService";
-            this.comboBoxService.Size = new System.Drawing.Size(185, 21);
-            this.comboBoxService.TabIndex = 14;
-            // 
-            // labelService
-            // 
-            this.labelService.AutoSize = true;
-            this.labelService.Location = new System.Drawing.Point(6, 134);
-            this.labelService.Name = "labelService";
-            this.labelService.Size = new System.Drawing.Size(46, 13);
-            this.labelService.TabIndex = 13;
-            this.labelService.Text = "Услуга:";
-            // 
-            // id
-            // 
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Visible = false;
-            // 
-            // dateVac
-            // 
-            this.dateVac.HeaderText = "Дата прививки";
-            this.dateVac.Name = "dateVac";
-            this.dateVac.ReadOnly = true;
-            // 
-            // animal
-            // 
-            this.animal.HeaderText = "Животное";
-            this.animal.Name = "animal";
-            this.animal.ReadOnly = true;
-            // 
-            // doctor
-            // 
-            this.doctor.HeaderText = "Врач";
-            this.doctor.Name = "doctor";
-            this.doctor.ReadOnly = true;
-            // 
-            // service
-            // 
-            this.service.HeaderText = "Услуга";
-            this.service.Name = "service";
-            this.service.ReadOnly = true;
-            // 
             // VaccinationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 350);
+            this.ClientSize = new System.Drawing.Size(931, 242);
             this.Controls.Add(this.groupBoxVaccination);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);

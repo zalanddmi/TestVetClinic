@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VetClinic.data;
-using VetClinic.doctor.Models;
-using VetClinic.doctor.Repositories;
 using VetClinic.interfaces;
 using VetClinic.service.Models;
 using VetClinic.service.Repositories;

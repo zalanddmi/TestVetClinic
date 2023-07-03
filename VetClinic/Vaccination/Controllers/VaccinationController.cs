@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VetClinic.animal.Services;
+﻿using System.Collections.Generic;
 using VetClinic.interfaces;
 using VetClinic.vaccination.Services;
 

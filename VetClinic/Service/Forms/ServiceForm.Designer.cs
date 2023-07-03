@@ -34,6 +34,8 @@
             this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxService = new System.Windows.Forms.GroupBox();
+            this.textBoxPrice = new System.Windows.Forms.TextBox();
+            this.labelPrice = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonOk = new System.Windows.Forms.Button();
             this.textBoxDescription = new System.Windows.Forms.TextBox();
@@ -43,8 +45,6 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.textBoxPrice = new System.Windows.Forms.TextBox();
-            this.labelPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewServices)).BeginInit();
             this.groupBoxService.SuspendLayout();
             this.SuspendLayout();
@@ -105,12 +105,28 @@
             this.groupBoxService.Controls.Add(this.labelDescription);
             this.groupBoxService.Controls.Add(this.textBoxName);
             this.groupBoxService.Controls.Add(this.labelName);
-            this.groupBoxService.Location = new System.Drawing.Point(492, 116);
+            this.groupBoxService.Location = new System.Drawing.Point(498, 12);
             this.groupBoxService.Name = "groupBoxService";
             this.groupBoxService.Size = new System.Drawing.Size(200, 181);
             this.groupBoxService.TabIndex = 11;
             this.groupBoxService.TabStop = false;
             this.groupBoxService.Text = "Услуга";
+            // 
+            // textBoxPrice
+            // 
+            this.textBoxPrice.Location = new System.Drawing.Point(10, 117);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(184, 20);
+            this.textBoxPrice.TabIndex = 12;
+            // 
+            // labelPrice
+            // 
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.Location = new System.Drawing.Point(7, 100);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(65, 13);
+            this.labelPrice.TabIndex = 11;
+            this.labelPrice.Text = "Стоимость:";
             // 
             // buttonCancel
             // 
@@ -194,27 +210,11 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // textBoxPrice
-            // 
-            this.textBoxPrice.Location = new System.Drawing.Point(10, 117);
-            this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(184, 20);
-            this.textBoxPrice.TabIndex = 12;
-            // 
-            // labelPrice
-            // 
-            this.labelPrice.AutoSize = true;
-            this.labelPrice.Location = new System.Drawing.Point(7, 100);
-            this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(65, 13);
-            this.labelPrice.TabIndex = 11;
-            this.labelPrice.Text = "Стоимость:";
-            // 
             // ServiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 317);
+            this.ClientSize = new System.Drawing.Size(710, 237);
             this.Controls.Add(this.groupBoxService);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonUpdate);

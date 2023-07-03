@@ -11,6 +11,7 @@ using VetClinic.animal.Forms;
 using VetClinic.doctor.Forms;
 using VetClinic.owner.Forms;
 using VetClinic.service.Forms;
+using VetClinic.vaccination.Forms;
 
 namespace VetClinic
 {
@@ -43,6 +44,12 @@ namespace VetClinic
         {
             ServiceForm serviceForm = new ServiceForm();
             serviceForm.ShowDialog();
+        }
+
+        private void buttonVaccinations_Click(object sender, EventArgs e)
+        {
+            VaccinationForm vaccinationForm = new VaccinationForm();
+            vaccinationForm.ShowDialog();
         }
     }
 }

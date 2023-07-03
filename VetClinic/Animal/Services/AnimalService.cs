@@ -7,16 +7,20 @@ using VetClinic.animal.Models;
 using VetClinic.animal.Repositories;
 using VetClinic.data;
 using VetClinic.interfaces;
+using VetClinic.vaccination.Models;
+using VetClinic.vaccination.Repositories;
 
 namespace VetClinic.animal.Services
 {
     public class AnimalService : IService
     {
         private readonly IRepository<Animal> _animalRepository;
+        private readonly IRepository<Vaccination> _vaccinationRepository;
 
         public AnimalService()
         {
             _animalRepository = new AnimalRepository();
+            _vaccinationRepository = new VaccinationRepository();
         }
 
         public void Add(object[] values)
@@ -40,7 +44,7 @@ namespace VetClinic.animal.Services
 
         public void Delete(int id)
         {
-            bool resultCheck = new VetClinicContext().Vaccination.Any(vac => vac.animal_id == id);
+            bool resultCheck = _vaccinationRepository.GetAll().Any(vac => vac.animal_id == id);
             if (resultCheck)
             {
                 throw new ArgumentException("Данная запись животного содержится в записях прививок.");
@@ -107,7 +111,7 @@ namespace VetClinic.animal.Services
             {
                 throw new ArgumentException("Кличка не может быть пустой.");
             }
-            if (birthDate > DateTime.Today)
+            if (birthDate.Date > DateTime.Today)
             {
                 throw new ArgumentException("Дата рождения не может быть позже текущей.");
             }

@@ -11,18 +11,22 @@ using VetClinic.animal.Controllers;
 using VetClinic.animal.Models;
 using VetClinic.data;
 using VetClinic.interfaces;
+using VetClinic.owner.Models;
+using VetClinic.owner.Repositories;
 
 namespace VetClinic.animal.Forms
 {
     public partial class AnimalForm : Form, IForm
     {
         private readonly IController _animalController;
+        private readonly IRepository<Owner> _ownerRepository;
         private bool isAdd;
 
         public AnimalForm()
         {
             InitializeComponent();
             _animalController = new AnimalController();
+            _ownerRepository = new OwnerRepository();
             ShowRecords();
             ChangeVisibleGroupBox(false);
         }
@@ -91,7 +95,7 @@ namespace VetClinic.animal.Forms
         private void RefreshComboBoxes()
         {
             comboBoxOwner.DataSource = null;
-            var owners = new VetClinicContext().Owner.ToList();
+            var owners = _ownerRepository.GetAll();
             comboBoxOwner.DataSource = owners;
             comboBoxOwner.DisplayMember = "fio";
             comboBoxOwner.ValueMember = "id_owner";

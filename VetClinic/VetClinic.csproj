@@ -146,6 +146,9 @@
     <EmbeddedResource Include="service\Forms\ServiceForm.resx">
       <DependentUpon>ServiceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vaccination\Forms\VaccinationForm.resx">
+      <DependentUpon>VaccinationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

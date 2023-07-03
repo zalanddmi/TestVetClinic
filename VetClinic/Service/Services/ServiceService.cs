@@ -9,16 +9,20 @@ using VetClinic.doctor.Repositories;
 using VetClinic.interfaces;
 using VetClinic.service.Models;
 using VetClinic.service.Repositories;
+using VetClinic.vaccination.Models;
+using VetClinic.vaccination.Repositories;
 
 namespace VetClinic.service.Services
 {
     public class ServiceService : IService
     {
         private readonly IRepository<Service> _serviceRepository;
+        private readonly IRepository<Vaccination> _vaccinationRepository;
 
         public ServiceService()
         {
             _serviceRepository = new ServiceRepository();
+            _vaccinationRepository = new VaccinationRepository();
         }
 
         public void Add(object[] values)
@@ -38,7 +42,7 @@ namespace VetClinic.service.Services
 
         public void Delete(int id)
         {
-            bool resultCheck = new VetClinicContext().Vaccination.Any(vac => vac.service_id == id);
+            bool resultCheck = _vaccinationRepository.GetAll().Any(vac => vac.service_id == id);
             if (resultCheck)
             {
                 throw new ArgumentException("Данная запись услуги содержится в записях прививок.");
